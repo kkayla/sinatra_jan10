@@ -1,0 +1,10 @@
+<ul>
+    <% @posts.each do |post| %>
+    <li><a href='/onepost'
+      <ul>
+        <li>title: <%= post.title %></li>
+        <li>wrote at: <%= post.created_at %></li></a>
+      </ul>
+    </li>
+    <% end %>
+</ul>
