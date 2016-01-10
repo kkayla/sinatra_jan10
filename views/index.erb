@@ -1,10 +1,12 @@
-<ul>
+<p>
+  <ul>
     <% @posts.each do |post| %>
-    <li><a href='/onepost'
+    <li><a href='/posts'
       <ul>
-        <li>title: <%= post.title %></li>
-        <li>wrote at: <%= post.created_at %></li></a>
+        <li>title: <%= post.title %></li></a>
+        wrote at: <%= post.created_at %>
       </ul>
     </li>
     <% end %>
-</ul>
+  </ul>
+</p>
